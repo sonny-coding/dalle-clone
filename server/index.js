@@ -17,6 +17,9 @@ app.use("/api/v1/dalle", dalleRoutes);
 app.get("/", async (req, res) => {
   res.send("hello from DALL-E clone");
 });
+app.get("/hello", (req, res) => {
+  res.send("hello from server");
+});
 
 const startServer = async () => {
   try {
